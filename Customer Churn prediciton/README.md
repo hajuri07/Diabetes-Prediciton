@@ -1,5 +1,13 @@
 # 📉 Customer Churn Prediction — Flask Deployment
 
+> **⚠️ Important Note:**  
+> If you want to run the Flask app locally, **make sure to use `clean_churn_data.csv`** (the cleaned dataset).  
+> The raw dataset may contain formatting issues (like string `" "` in numeric fields), which will cause errors during preprocessing.  
+> So simply place `clean_churn_data.csv` in the project directory and the app will run smoothly ✅
+
+---
+
+
 A **production-style Machine Learning application** that predicts customer churn and helps businesses take **proactive retention decisions**.
 
 This project goes beyond a Jupyter notebook — it includes:
