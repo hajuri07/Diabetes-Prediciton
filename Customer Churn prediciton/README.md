@@ -40,6 +40,43 @@ It depends on *combinations* of behaviors, like:
 XGBoost **learns these interactions**—Logistic Regression does not.
 
 ---
+---
+
+## 🗄️ Why SQL in This Project?
+
+In real business environments, churn prediction isn't just a one-time calculation —  
+**models run continuously**, and results are stored for:
+
+- Performance tracking
+- Customer outreach workflows
+- Business decision dashboards
+
+So in this project, I used **SQL** to:
+
+1. **Store the cleaned dataset**
+2. **Save model predictions with churn probability**
+3. **Enable filtering & querying** (e.g., “Show customers above 75% churn risk”)
+
+Example queries used:
+
+```sql
+-- Get top 20 highest-risk customers
+SELECT customerID, Churn_Probability
+FROM churn_predictions
+ORDER BY Churn_Probability DESC
+LIMIT 20;
+
+-- Count churn vs non-churn distribution
+SELECT Prediction, COUNT(*)
+FROM churn_predictions
+GROUP BY Prediction;
+
+-- Find customers with high charges and high churn probability
+SELECT customerID, MonthlyCharges, Churn_Probability
+FROM churn_predictions
+WHERE MonthlyCharges > 80
+  AND Churn_Probability > 0.6;
+
 
 ## 🧠 Tech Stack
 
