@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow-sm mb-4">
+  <div class="card-body">
+    <h5 class="card-title">Results</h5>
+    <p>Threshold used: <b>{{ threshold }}</b></p>
+
+    {% if metrics %}
+    <h6>Test Metrics (if your CSV had a Churn column)</h6>
+    <ul>
+      <li>Precision: {{ "%.3f"|format(metrics.precision) }}</li>
+      <li>Recall: {{ "%.3f"|format(metrics.recall) }}</li>
+      <li>F1: {{ "%.3f"|format(metrics.f1) }}</li>
+      <li>TP: {{ metrics.tp }}, FP: {{ metrics.fp }}, TN: {{ metrics.tn }}, FN: {{ metrics.fn }}</li>
+    </ul>
+    {% else %}
+    <div class="text-muted">No ground truth found — showing predictions only.</div>
+    {% endif %}
+
+    <h6 class="mt-3">Preview (Top 20)</h6>
+    <div class="table-responsive">
+      {{ preview_table|safe }}
+    </div>
+
+    {% if has_download %}
+    <form action="/download" method="POST" enctype="multipart/form-data" class="mt-3">
+      <input type="hidden" name="threshold_dl" value="{{ threshold }}">
+      <div class="mb-2">
+        <label class="form-label">Re-upload same CSV to download full scored file</label>
+        <input type="file" name="csv_file_dl" class="form-control" accept=".csv" required>
+      </div>
+      <button class="btn btn-success">Download Scored CSV</button>
+    </form>
+    {% endif %}
+  </div>
+</div>
+<a class="btn btn-secondary" href="/">← Back</a>
+{% endblock %}
