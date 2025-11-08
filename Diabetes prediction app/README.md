@@ -71,17 +71,6 @@ After evaluating all models, the **best-performing model** was deployed as an
 
 ---
 
-## 🔢 Model Evaluation
-
-| Model                | Accuracy | F1-Score | Precision | Recall |
-|----------------------|-----------|-----------|------------|---------|
-| 🧩 Logistic Regression  | **0.753** | **0.661** | **0.649** | **0.673** |
-| 🌲 Random Forest        | 0.734     | 0.631     | 0.625      | 0.636   |
-| ⚡ XGBoost              | 0.708     | 0.615     | 0.581      | 0.654   |
-
-📈 **Best Model:** Logistic Regression ✅ *(Simple yet strong for this dataset)*
-
----
 
 ## 💾 Model Saving
 
