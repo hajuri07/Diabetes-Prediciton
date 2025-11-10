@@ -1,7 +1,7 @@
-<h1 align="center">Customer-CHurn  prediciton 🚀</h1>
+<h1 align="center">Customer-Churn  prediciton 🚀</h1>
 
 <p align="center">
-  <em>AThis project predicts whether a customer will churn (leave the service).  
+  <em>This project predicts whether a customer will churn (leave the service).  
 Businesses can use these predictions to take retention actions before the customer leaves.</em>
 </p>
 
