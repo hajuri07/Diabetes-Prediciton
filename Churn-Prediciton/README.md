@@ -1,7 +1,12 @@
- Customer Churn Prediction System
+<h1 align="center">Customer-CHurn  prediciton 🚀</h1>
 
-This project predicts whether a customer will churn (leave the service).  
-Businesses can use these predictions to take retention actions before the customer leaves.
+<p align="center">
+  <em>AThis project predicts whether a customer will churn (leave the service).  
+Businesses can use these predictions to take retention actions before the customer leaves.</em>
+</p>
+
+---
+
 
 ---
 
