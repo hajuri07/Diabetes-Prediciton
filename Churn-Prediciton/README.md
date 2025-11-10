@@ -63,7 +63,7 @@ So **we optimized for Recall**, not Accuracy.
 
 ## 🧪 Model Evaluation
 
-| Metric | Result | Meaning |
+| Metric | Meaning |
 |-------|--------|---------|
 | **Precision** | Of predicted churners, how many were real churners |
 | **Recall** |  How many actual churners we successfully detected |
