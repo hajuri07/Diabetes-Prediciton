@@ -1,10 +1,6 @@
-streamlit
-numpy
+flask
 pandas
-plotly
-xgboost
+numpy
 scikit-learn
+xgboost
 joblib
-requests
-matplotlib
-seaborn
