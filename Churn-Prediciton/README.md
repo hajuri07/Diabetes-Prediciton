@@ -6,6 +6,7 @@ Businesses can use these predictions to take retention actions before the custom
 </p>
 
 ---
+**Demo:** **  
 
 
 ---
@@ -70,23 +71,6 @@ So **we optimized for Recall**, not Accuracy.
 | **Confusion Matrix** | Used to verify true/false positives/negatives |
 
 **Recall was prioritized** because the business goal = **catch as many leaving customers as possible.**
-
----
-
-## 🖥️ Deployment (Streamlit App)
-
-git clone <repo-url>
-cd churn-prediction
-pip install -r requirements.txt
-streamlit run app.py
-
-
-App runs at:
-http://localhost:8501
-
-
-**Demo:** **  
-
 
 ---
 
